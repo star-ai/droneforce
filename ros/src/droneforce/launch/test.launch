@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+    
+
+
+  <node pkg="droneforce" name="SimROSClient" type="SimROSClient" />
+  <!-- <node name="rqt_observer" pkg="rqt_gui" type="rqt_gui" respawn="false" output="screen" />
+  <node pkg="rviz" type="rviz" name="rviz" /> -->
+
+
+  <!-- use these 2 nodes below if we want to see the CameraOdom node publishing a fixed odometry to the environment, 
+  This requires changing the FlightGogglesClientBindings to build ROSClient -->
+
+  <!-- <node pkg="flightgoggles_client_bindings" name="flightGogglesClient" type="ROSClient"/> -->
+  <!-- <node pkg="droneforce" name="CameraOdom" type="CameraOdom.py"/> -->
+
+</launch>
